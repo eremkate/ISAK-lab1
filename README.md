@@ -5,3 +5,7 @@
 Еремина Екатерина
 
 Перфилова Арина
+
+
+
+![Рис1](https://github.com/eremkate/screenshots/blob/main/Снимок1.JPG)
