@@ -7,9 +7,11 @@
 Перфилова Арина
 
 
-
+Исходный снимок с сайта https://earthexplorer.usgs.gov (На снимке представлена Тамбовская область)
 ![Рис1](https://github.com/eremkate/screenshots/blob/main/Снимок1.JPG)
 
+Вырезанный со снимка город Мичуринск, Тамбовской обл.
 ![Рис2](https://github.com/eremkate/screenshots/blob/main/Снимоквырезан.JPG)
 
+Результат выполнения программы: значения координат углов,подсчет дельты по горизонтали и вертикали
 ![Рис3](https://github.com/eremkate/screenshots/blob/main/Снимок2.JPG)
