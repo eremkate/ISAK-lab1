@@ -14,4 +14,5 @@
 ![Рис2](https://github.com/eremkate/screenshots/blob/main/Снимоквырезан.JPG)
 
 Результат выполнения программы: значения координат углов,подсчет дельты по горизонтали и вертикали
+
 ![Рис3](https://github.com/eremkate/screenshots/blob/main/Снимок2.JPG)
