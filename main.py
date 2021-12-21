@@ -13,7 +13,6 @@ for line in lines:
     line = line.strip()
     if line[0:21] in corners:
         coordinates.append(float(line[24:]))
-# print(coordinates)
 array_coord = np.array([coordinates[0::2], coordinates[1::2]])
 print(array_coord)
 
@@ -29,15 +28,15 @@ density_x = delta_x/x
 density_y = delta_y/y
 print(density_x, density_y)
 
-ul_lat = 52.893913
-ul_lon = 40.498020
+mich_lat = 52.893913
+mich_lon = 40.498020
 
-ul_dif_lat = coordinates[0] - ul_lat
-ul_dif_lon = coordinates[1] - ul_lon
-print(ul_dif_lat, ul_dif_lon)
+mich_dif_lat = coordinates[0] - mich_lat
+mich_dif_lon = coordinates[1] - mich_lon
+print(mich_dif_lat, mich_dif_lon)
 
-pixel_lat = ul_dif_lat / density_y
-pixel_lon = ul_dif_lon / density_x
+pixel_lat = mich_dif_lat / density_y
+pixel_lon = mich_dif_lon / density_x
 print(pixel_lat, pixel_lon)
 
 point_ul_x = 1160 - 120
@@ -48,3 +47,7 @@ point_lr_y = 6034 + 120
 image = Image.open('LE07_L2SP_175023_20020721_20200916_02_T1_SR_B3.TIF')
 cropped = image.crop((point_ul_x, point_ul_y, point_lr_x, point_lr_y))
 cropped.save('C:\\Users\\katia\\PycharmProjects\\michurinsk\\cropped.TIF')
+
+image1 = Image.open('LE07_L2SP_175023_20020721_20200916_02_T1_SR_B4.TIF')
+cropped1 = image1.crop((point_ul_x, point_ul_y, point_lr_x, point_lr_y))
+cropped1.save('C:\\Users\\katia\\PycharmProjects\\michurinsk\\cropped1.TIF')
